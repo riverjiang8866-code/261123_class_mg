@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김민준 ♥ 이서연 결혼합니다</title>
+  <meta name="description" content="2027년 4월 17일 토요일 오후 1시, 저희 두 사람의 결혼식에 초대합니다." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="invitation">
+
+    <!-- 1. 메인 커버 -->
+    <section class="cover">
+      <p class="cover-eng">We are getting married</p>
+      <div class="cover-photo" aria-label="메인 사진 자리">
+        <span>Main Photo</span>
+      </div>
+      <h1 class="cover-names">
+        김민준 <span class="amp">&amp;</span> 이서연
+      </h1>
+      <p class="cover-date">2027. 04. 17. SAT PM 1:00</p>
+      <p class="cover-place">더채플앳청담 3층 그랜드홀</p>
+    </section>
+
+    <!-- 2. 인사말 -->
+    <section class="section greeting fade-in">
+      <p class="section-eng">Invitation</p>
+      <h2 class="section-title">소중한 분들을 초대합니다</h2>
+      <p class="greeting-text">
+        서로 다른 길을 걸어온 두 사람이<br />
+        이제 같은 곳을 바라보며<br />
+        함께 걸어가려 합니다.<br /><br />
+        저희의 새로운 시작을<br />
+        따뜻한 마음으로 축복해 주시면<br />
+        더없는 기쁨으로 간직하겠습니다.
+      </p>
+
+      <div class="parents">
+        <p><span class="parent-name">김철수 · 박영희</span><span class="relation">의 장남</span><strong>민준</strong></p>
+        <p><span class="parent-name">이영호 · 최미경</span><span class="relation">의 장녀</span><strong>서연</strong></p>
+      </div>
+    </section>
+
+    <!-- 3. 날짜 & 캘린더 -->
+    <section class="section calendar-section fade-in">
+      <p class="section-eng">Wedding Day</p>
+      <h2 class="section-title">2027년 4월 17일 토요일</h2>
+      <p class="sub-text">오후 1시</p>
+
+      <div class="calendar" id="calendar"></div>
+
+      <div class="countdown" id="countdown">
+        <div><strong id="cd-days">0</strong><span>DAYS</span></div>
+        <div><strong id="cd-hours">0</strong><span>HOUR</span></div>
+        <div><strong id="cd-mins">0</strong><span>MIN</span></div>
+        <div><strong id="cd-secs">0</strong><span>SEC</span></div>
+      </div>
+      <p class="dday-text" id="dday-text"></p>
+    </section>
+
+    <!-- 4. 갤러리 -->
+    <section class="section gallery-section fade-in">
+      <p class="section-eng">Gallery</p>
+      <h2 class="section-title">우리의 순간들</h2>
+      <div class="gallery" id="gallery">
+        <button class="gallery-item" data-index="0"><span>1</span></button>
+        <button class="gallery-item" data-index="1"><span>2</span></button>
+        <button class="gallery-item" data-index="2"><span>3</span></button>
+        <button class="gallery-item" data-index="3"><span>4</span></button>
+        <button class="gallery-item" data-index="4"><span>5</span></button>
+        <button class="gallery-item" data-index="5"><span>6</span></button>
+      </div>
+    </section>
+
+    <!-- 5. 오시는 길 -->
+    <section class="section location fade-in">
+      <p class="section-eng">Location</p>
+      <h2 class="section-title">오시는 길</h2>
+      <p class="venue-name">더채플앳청담 3층 그랜드홀</p>
+      <p class="venue-address">서울특별시 강남구 선릉로 757</p>
+      <p class="venue-tel">Tel. 02-000-0000</p>
+
+      <div class="map-box">
+        <span>지도 영역</span>
+      </div>
+
+      <div class="map-buttons">
+        <a href="https://map.naver.com/p/search/더채플앳청담" target="_blank" rel="noopener">네이버 지도</a>
+        <a href="https://map.kakao.com/?q=더채플앳청담" target="_blank" rel="noopener">카카오맵</a>
+        <button type="button" class="copy-btn" data-copy="서울특별시 강남구 선릉로 757">주소 복사</button>
+      </div>
+
+      <dl class="transport">
+        <dt>지하철</dt>
+        <dd>7호선 청담역 13번 출구 도보 5분</dd>
+        <dt>버스</dt>
+        <dd>간선 143, 240, 301 · 지선 3011, 4412</dd>
+        <dt>주차</dt>
+        <dd>건물 내 지하주차장 2시간 무료</dd>
+      </dl>
+    </section>
+
+    <!-- 6. 마음 전하실 곳 -->
+    <section class="section account fade-in">
+      <p class="section-eng">With Heart</p>
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <p class="sub-text">참석이 어려우신 분들을 위해 기재하였습니다.<br />너그러운 마음으로 양해 부탁드립니다.</p>
+
+      <div class="accordion">
+        <button type="button" class="accordion-head">신랑측 계좌번호</button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <div><p class="acc-name">신랑 김민준</p><p class="acc-num">국민 123-456-789012</p></div>
+            <button type="button" class="copy-btn" data-copy="국민 123-456-789012">복사</button>
+          </div>
+          <div class="account-row">
+            <div><p class="acc-name">아버지 김철수</p><p class="acc-num">신한 110-123-456789</p></div>
+            <button type="button" class="copy-btn" data-copy="신한 110-123-456789">복사</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button type="button" class="accordion-head">신부측 계좌번호</button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <div><p class="acc-name">신부 이서연</p><p class="acc-num">우리 1002-123-456789</p></div>
+            <button type="button" class="copy-btn" data-copy="우리 1002-123-456789">복사</button>
+          </div>
+          <div class="account-row">
+            <div><p class="acc-name">어머니 최미경</p><p class="acc-num">하나 123-456789-01234</p></div>
+            <button type="button" class="copy-btn" data-copy="하나 123-456789-01234">복사</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 마무리 -->
+    <footer class="ending fade-in">
+      <p class="ending-text">함께해 주셔서 감사합니다</p>
+      <p class="ending-names">민준 &amp; 서연</p>
+      <button type="button" class="share-btn" id="share-btn">청첩장 링크 공유하기</button>
+    </footer>
+  </main>
+
+  <!-- 갤러리 확대 보기 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lb-close" id="lb-close" aria-label="닫기">&times;</button>
+    <button type="button" class="lb-prev" id="lb-prev" aria-label="이전">&#8249;</button>
+    <div class="lb-image" id="lb-image"></div>
+    <button type="button" class="lb-next" id="lb-next" aria-label="다음">&#8250;</button>
+  </div>
+
+  <!-- 알림 토스트 -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
